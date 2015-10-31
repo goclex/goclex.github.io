@@ -1,0 +1,427 @@
+/*@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}*/
+html{
+	background-image: url('bake1.jpg'); /*'bake1.JPG'*/ 
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover ;/* 1600px;*/
+	/*-webkit-background-size: 100% auto; 
+	-moz-background-size: 100% auto; 
+	background-size: 100% auto;*/
+	background-color: darkgrey;
+	background-attachment: fixed; /*scroll;*/
+	min-width:100%;
+	min-height:100%;
+	left:0;
+	/*margin: 0px;
+	width: 100%;
+	height: auto;
+	position: absolute;*/
+}
+body{
+	margin: 0px;
+}
+/*html,body{
+	height:100%;
+	width:100%;
+} */
+
+.contentbox{
+
+	font-family: 'Open Sans Condensed',Sans-Serif,"Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	color: black;
+	box-shadow: 0px 0px 30px -5px black inset;
+	width: 1200px;
+	height: 550px;
+	margin: 0px auto 0 auto ;/*170px top*/
+	display: block;	
+	background:#fff;
+	/* rounded corners? */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+	z-index: 2;
+	
+}
+
+
+
+h1 {
+	font-family: 'Allura', 'Open Sans Condensed', cursive, Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, sans-serif; /* cool font 'Open Sans Condensed', */
+	font-weight: 500;
+	font-size: 93px;/*93px*/
+	text-align: center;
+	margin:0;
+	text-shadow: 0px 0px 17px rgb(7, 28, 110); /*darkgrey; /* #fffcfc; /* 0 0 17px rgb(7, 28, 110);  blue shadow*/
+	color: #1E42CF;/*  blue font*/
+	position: relative;
+	top:0;
+}
+
+/*if IE*/
+.ie #titlebox{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFCFCFC,endColorstr=#CCFCFCFC); 
+    zoom: 1;
+}
+#titlebox{
+    position: relative;
+  	width: 1200px;	
+	margin: 0px auto 0 auto; /*535px (top)*/
+	z-index: 0;
+	text-align: center;
+	background: rgba(252, 252, 252, .8);
+}
+
+
+a{
+		color:  #fffcfc; 
+		text-decoration:none;
+	}
+
+
+#centerme div{
+	display: inline;
+       position: absolute;
+	margin: 12px 60px 50px 60px; /* 0 60px*/
+}
+#ourstorytab {
+	left:0px;
+}
+#infotab{
+	right: 0px;
+}
+#menutab{
+	left:270px;
+}
+#centerme {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+}
+.ie #buttons{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E0202020,endColorstr=#E0202020); 
+    zoom: 1;
+}
+#buttons
+	{	
+	position: relative;
+	width: 1200px;
+	height: 80px; /*50px*/
+	padding: 0;
+	list-style-type: none;
+	margin: 0px auto 00px auto;/* old: 12px auto 30px auto;*/
+	text-align: center;
+	font-size: 40px;
+	
+	text-shadow: 2px 2px 17px;/* was 40px for third*/
+	font-family:'Open Sans Condensed',Sans-serif, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	z-index: 2;
+	background-color: rgba( 32,32,32, 0.9  )
+}
+#buttons a{
+	cursor:pointer;
+}
+.ie #ourstorybox{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E0202020,endColorstr=#E0202020); 
+    zoom: 1;
+}
+
+#ourstorybox{
+
+	background-color: rgba(32, 32, 32, 0.9);
+	 	box-shadow: 0px 0px 0 0 black inset;
+}
+.storytime a{
+	color:#1E42CF; /*#1E42CF*/
+	text-shadow: 2px 2px 2px black;
+}
+
+.storytime{
+	bottom: 0px;
+	font-family:'Allura', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 35px;
+	color: white;
+	text-align: center;	
+	
+	display:block;
+	width: 1005px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-shadow: 2px 2px 4px gray; /*rgb(204, 166, 68)*/
+	z-index: 10;
+
+}
+.centered{
+	width: 550px;
+	margin: 0 auto;
+	positions: relative;
+}
+.slideshow
+{ 	
+	background: rgb(32,32,32); /* for IE so that Jquery.cycle.all.js doesn't assign #FFFFFF*/
+	/* box-shadow:  5px 5px 25px 0px black; */
+	width: 1005px;
+	height: 365px;
+    /*background-image: url('hotkorambiedes.jpg'); /*korambiedes.jpg');
+    *background-repeat: no-repeat;
+    *background-size: contain;*/
+	margin: auto;
+	
+	top: 54px;
+	margin-bottom: 0;
+	z-index=0;
+
+}
+
+
+.images{
+	width: 550px;
+	height: 365px;
+	box-shadow: 5px 5px 25px 0px black;
+	margin:  auto;
+}
+
+#dotbox{
+	display: block;
+	position: relative;
+	width:  500px;
+	height: 15px;
+	margin: 116px auto;
+	z-index: 5;
+	text-align: center;
+}
+#dotbox a{
+	margin: 0 10px;
+	color: darkgray;
+	background-color: darkgray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+}
+#dotbox a.activeSlide {
+	 /* .activeSlide is the class jquery.cycle.all.js gives to current pager (in #dotbox)*/
+	background: #ea0
+}
+.contentbox #infobox{
+       	box-shadow:0 0 0 white;
+}
+#infobar{
+
+	/* repetitive font-family: "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/		
+	margin-top: 20px;
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	color: white;
+	padding: 2px 4px;
+	background-color: #3d63b8; /* info blue*/
+
+}
+#map
+{
+	margin-top: -6px;
+	margin-left: 1px;
+	margin-right: 60px;
+	width: 535px;
+	display: inline-block;
+	}
+	
+.ie #menubox{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E0FAFCF8,endColorstr=#E0FAFCF8); 
+    zoom: 1;
+}
+
+#menubox{
+
+	background-color: rgba(250, 252, 248, 0.9);
+	height:695px;
+}
+#menutitle {
+	font-family: 'Allura', cursive,'Open Sans Condensed',Sans-Serif, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: 500;
+	font-size: 66px;/*66px*/
+	text-align: right;
+	color:  #1E42CF;/*#3d63b8;*/
+	margin: -15px 143px -29px 74px;
+	/* text-shadow: 1px 89px 10px rgb(0, 15, 192); *//
+	 z-index:inherit;
+}
+#menulist{
+	color: white;
+	
+	text-decoration: none;
+		
+	display: inline-block;
+	position: relative;
+	float: left;
+	font-size: 25px;
+	box-shadow: 0px 0px 30px -11px inset;
+	background-color: grey;
+	height: 604px;
+	width: 302px;
+ 	
+	/*padding: 0px 13px 50px 1px;*/
+	margin: 35px 0 0 48px ;
+	-moz-border-radius: 5px ;
+	-webkit-border-radius: 5px ;
+	border-radius: 5px ;
+	-khtml-border-radius: 5px ;
+	 z-index:inherit;
+}
+
+.menulist :hover {
+	color: black;
+	 z-index:inherit;
+}
+.menulist{
+	height: 40px;
+	width: 250px;
+
+	
+	margin:  10px 0;
+	z-index:inherit;
+}
+
+#menuitems{
+	display:inline-block;
+  	position: relative;
+  	float:left;
+	margin-left: 55px;	
+	margin-top: 35px;
+	width: 365px;
+	height: 305px;
+	z-index:inherit;
+	
+}
+.item{
+	display: inline-block;
+	position: absolute;
+	padding: 5px;
+	width:365px;
+	margin-left: 5px;
+	height: 305px;
+	/*top: 181px;
+	right: 603px;*/
+	background-color: #1E42CF;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:  5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;  
+	-khtml-border-radius: 5px 5px 5px 5px;
+	z-index:inherit;
+}
+
+.foodimage{
+	display: inline;
+	position: relative;
+	margin: 5px 0 0 7px;
+	width: 550px; /* image size is actually 350 px by 233 px */
+	height: 365px;
+	top: 8px;
+	 z-index:inherit;
+}
+.fooddescription{
+	display: block;
+	position: relative;
+	text-align: left;
+	max-width: 350px;
+	margin: 7px 0 0 8px;
+	color: rgb(228, 228, 228); /*#fffcfc; /* white for font*/
+	font-family: 'Allura', 'Allura', "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif
+	font-size: 12px;
+	 z-index:inherit;
+}
+
+#formbox{
+	display:inline-block;
+	position: relative;
+	margin-left: 69px;
+	margin-top: 35px;
+	float:left;
+	/*top: 248px;*/
+	/*right: 268px;*/
+	width: 302px;
+	height: 604px;
+	text-align: center;
+	background-color:black;
+	-moz-border-radius: 5px 5px 5px 5px;  
+	-webkit-border-radius: 5px 5px 5px 5px;  
+	border-radius: 5px 5px 5px 5px;  
+	-khtml-border-radius: 5px 5px 5px 5px;
+	 z-index:inherit;
+}
+#menul6{
+	color: white;
+	font-size:25px;
+ 	margin: 9px;
+
+}
+
+#orderinfo{
+color:white;
+font-size:18px;
+padding:0 15px
+}
+
+form{
+
+	font-size: 17px;
+	color: white;
+	
+   z-index:inherit;
+}
+
+
+
+
+#churchlink li {
+	margin: 0 40px;
+	display: inline;
+}
+
+#churchlink a {
+	color: #CCCCCC;
+	
+}
+#churchlink{
+	text-align: center;
+	margin: 0px;
+	font-size: 18px;
+
+	padding:0px;
+/*	text-shadow: 0px 0px 1290px;
+*/
+}
+#footer	{
+	bottom: 0;
+	width: 100%;/*1600px*/
+	height: 27px;
+	/* for sticking to bottom*/
+	position: fixed;
+	font-family: 'Open Sans Condensed',Sans-Serif, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	text-align: right;
+	background-color: grey;
+	z-index: 3;
+	/* #f9f9f9;*/	/* inherited already font-family: "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
+
+
+}
+
+
+}
